@@ -1,0 +1,173 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.favi{
+    border-radius: 5px;
+}
+body{
+    height: 100%;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(121,88,1,1) 50%, rgba(43,35,0,1) 100%);    display: flex;    
+}
+.main{
+    height: auto;
+    width: 100%;
+}
+
+.navbar{
+    margin-top: 20px;
+    height: auto;
+    /* width: 100; */
+    background: rgb(74, 49, 0);
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    padding-right: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.673), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.navbar h2{
+    font-size: 30px;
+    color: rgb(255, 133, 3);
+    text-align: center;
+    padding: 1vw;
+}
+
+.base{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    border-radius: 50%;
+    height: 100px;
+}
+
+.small{
+    display: none;
+}
+
+.dropdown{
+position: relative;
+display: inline-block;
+cursor: pointer;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 80px;
+max-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.list a{
+    font-family: Arial;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.2s ease;
+}
+.list :hover{
+    color: brown;
+    transition: color 0.2s ease;
+
+}
+.dropdown a{
+    display: flex;
+    flex-direction: column;
+    color: rgb(128, 68, 0);
+    text-decoration: none;
+    font-family: Arial;
+    padding: 8px;
+}
+.dropdown-content div{
+    padding: 0px;
+    width: 100%;
+
+}
+.dropdown-content div:hover{
+    background-color: rgb(57, 37, 0);
+    color: white;
+}
+
+
+
+.navbar .button{
+    padding: 20px;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: red;
+    border: 0px;
+    border-radius: 25px;
+    color: white;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: larger;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.buton :hover{
+    color: red;
+    background-color: white;
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .list{
+        display:none;
+    }
+    .base h2{
+        font-size: 20px;
+    }
+    .button button{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+    .small{
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+    .icon{
+        height:60px;
+    }
+}
+
+.text{
+    font-size: 20px;
+}
+
+.content{
+    margin: 20px;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.content h1{
+    font-family: Arial;
+}
+
